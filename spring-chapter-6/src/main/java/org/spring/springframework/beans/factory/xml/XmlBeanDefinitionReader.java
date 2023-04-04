@@ -111,6 +111,7 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
             // 指定 BeanName，优先级 id > name
             String beanName = StrUtil.isNotEmpty(id) ? id : name;
             if (StrUtil.isEmpty(beanName)) {
+                // 如果没有指定 BeanName，则使用类名首字母小写
                 beanName = StrUtil.lowerFirst(clazz.getSimpleName());
             }
 

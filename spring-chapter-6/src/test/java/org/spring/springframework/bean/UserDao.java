@@ -5,16 +5,18 @@ import java.util.Map;
 
 public class UserDao {
 
-    private static Map<String, String> hashMap = new HashMap<>();
+    /**
+     * 模拟数据库
+     */
+    private static Map<String, String> db = new HashMap<>();
 
     static {
-        hashMap.put("10001", "小傅哥");
-        hashMap.put("10002", "八杯水");
-        hashMap.put("10003", "阿毛");
+        db.put("10001", "用户1");
+        db.put("10002", "用户2");
+        db.put("10003", "用户3");
     }
 
     public String queryUserName(String uId) {
-        return hashMap.get(uId);
+        return db.get(uId);
     }
-
 }
