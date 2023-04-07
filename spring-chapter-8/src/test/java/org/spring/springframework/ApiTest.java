@@ -27,4 +27,9 @@ public class ApiTest {
         System.out.println("BeanFactoryAware："+userService.getBeanFactory());
     }
 
+
+    @Test
+    public void test() {
+
+    }
 }

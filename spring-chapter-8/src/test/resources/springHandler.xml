@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <bean class="org.spring.springframework.handler.AbstractHandler"/>
+    <bean class="org.spring.springframework.handler.AHandler"/>
+    <bean class="org.spring.springframework.handler.BHandler"/>
+    <bean class="org.spring.springframework.handler.CHandler"/>
+
+</beans>
